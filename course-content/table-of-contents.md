@@ -18,6 +18,5 @@ Course materials for PFC710 - Summer 2026
   - Problem solving: working an example by hand before coding it
   - Strings: length, concatenation, repetition, indexing, slicing, and useful methods
   - Reading input with `input()` and formatting output with f-strings
-  - [Chapter 2 Exercises](chapter02/exercises.md)
 
 ---
