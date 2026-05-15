@@ -1235,11 +1235,7 @@ print(0.1 + 0.2)   # 0.30000000000000004 — not 0.3!
 
 For **money** or anything where exact decimals matter, work in cents (integers) or use the `decimal` module. For display, format with `f"{x:.2f}"`.
 
-### 3. Confusing `=` with `==`
-
-`=` is **assignment**; `==` is **comparison** (covered in Chapter 3). Writing `if x = 5:` is a `SyntaxError`.
-
-### 4. Mixing Strings and Numbers with `+`
+### 3. Mixing Strings and Numbers with `+`
 
 ```python
 "Total: " + 5         # TypeError
@@ -1249,7 +1245,7 @@ f"Total: {5}"         # ✅ even cleaner
 
 > **Debugging tip.** When a `TypeError` like this surprises you, drop a quick `print(type(x))` before the failing line to see what type Python actually has. For example, `age` after `age = input("Age: ")` is `<class 'str'>`, not `<class 'int'>` — `type()` makes that obvious in one line.
 
-### 5. Using a Variable Before It Is Defined
+### 4. Using a Variable Before It Is Defined
 
 ```python
 print(total)          # NameError: name 'total' is not defined
@@ -1258,7 +1254,7 @@ total = 100
 
 A variable must be assigned **before** any line that reads it.
 
-### 6. Index Out of Range
+### 5. Index Out of Range
 
 ```python
 name = "Harry"
@@ -1267,13 +1263,13 @@ print(name[5])        # IndexError — valid indexes are 0..4 (or -5..-1)
 
 Use `len(name)` to know the bounds, or use slicing (which never raises an `IndexError`).
 
-### 7. Division Quirks
+### 6. Division Quirks
 
 - `/` always returns a **float**: `4 / 2` is `2.0`, not `2`.
 - `//` truncates toward **negative infinity**: `-7 // 2` is `-4`, not `-3`.
 - Dividing by zero raises `ZeroDivisionError`. Always validate user input before dividing.
 
-### 8. Backslashes in Windows Paths
+### 7. Backslashes in Windows Paths
 
 ```python
 path = "C:\new\test"   # \n becomes a newline, \t becomes a tab
@@ -1281,7 +1277,7 @@ path = "C:\new\test"   # \n becomes a newline, \t becomes a tab
 
 Use `\\`, forward slashes, or a **raw string**: `r"C:\new\test"`.
 
-### 9. Accidental Reassignment of Built-ins
+### 8. Accidental Reassignment of Built-ins
 
 ```python
 list = [1, 2, 3]       # 'list' now hides the built-in list() type!
@@ -1289,7 +1285,7 @@ list = [1, 2, 3]       # 'list' now hides the built-in list() type!
 
 Avoid using names like `list`, `str`, `int`, `sum`, `id`, `input` for your own variables.
 
-### 10. Indentation and Whitespace
+### 9. Indentation and Whitespace
 
 Python uses indentation to group code. Mixing tabs and spaces, or indenting inconsistently, causes `IndentationError` or — worse — silent logic bugs. Pick one style (PyCharm uses 4 spaces by default) and stick with it.
 
