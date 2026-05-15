@@ -1387,13 +1387,6 @@ Python uses indentation to group code. Mixing tabs and spaces, or indenting inco
 
 ---
 
-## Additional Resources
-
-- [Python Multiline Comments](https://www.freecodecamp.org/news/python-multiline-comment-how-to-comment-out-multiple-lines-in-python/)
-- [Python Comments Guide](https://www.w3schools.com/python/python_comments.asp)
-
----
-
 _End of Chapter Two_
 
 [← Back to Course Index](../table-of-contents.md)
