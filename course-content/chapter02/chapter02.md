@@ -1016,7 +1016,6 @@ Methods are called with the dot syntax: `some_string.method_name(arguments)`. Be
 | `s.startswith(prefix)`          | `True` if `s` begins with `prefix`                     | `"hello".startswith("he")`               | `True`            |
 | `s.endswith(suffix)`            | `True` if `s` ends with `suffix`                       | `"hello".endswith("lo")`                 | `True`            |
 | `s.split(sep)`                  | Split into a list around `sep` (default: whitespace)   | `"a,b,c".split(",")`                     | `["a", "b", "c"]` |
-| `sep.join(list)`                | Join a list of strings with `sep` between them         | `", ".join(["a", "b", "c"])`             | `"a, b, c"`       |
 | `s.isdigit()`                   | `True` if every character is a digit                   | `"123".isdigit()`                        | `True`            |
 | `s.isalpha()`                   | `True` if every character is a letter                  | `"abc".isalpha()`                        | `True`            |
 
