@@ -745,9 +745,7 @@ Before you write any code, **work the problem by hand** with a small, concrete e
 
 ### A Worked Example: Converting Pennies to Dollars and Cents
 
-This is the same idea as the short program in **Section 2.2** ("Example: Converting Pennies to Dollars and Cents"), but here we slow down and **do it by hand first** so you see how the arithmetic becomes code.
-
-> **Problem.** You have a whole number of **pennies** (U.S. cents). How many **whole dollars** is that, and how many **pennies are left over** after you peel off those full dollars?
+**Problem.** You have a whole number of **pennies** (U.S. cents). How many **whole dollars** is that, and how many **pennies are left over** after you peel off those full dollars?
 
 **Step 1 — Pick concrete numbers.** Try **1729** pennies (the same total used in Section 2.2).
 
