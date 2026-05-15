@@ -1281,53 +1281,6 @@ Python uses indentation to group code. Mixing tabs and spaces, or indenting inco
 
 ---
 
-## Chapter Summary
-
-### Variables
-
-- A **variable** is a storage location with a name
-- When defining a variable, you must specify an initial value
-- By convention, variable names should start with a lower case letter
-- An assignment statement stores a new value in a variable, replacing the previously stored value
-
-### Operators
-
-- The assignment operator `=` does **not** denote mathematical equality
-- Variables whose initial value should not change are typically capitalized by convention (constants)
-- **Augmented assignments** like `+=`, `-=`, `*=`, `//=`, `%=` are shorthand for `x = x op y`
-- **Multiple assignment** (`a, b = 1, 2`) makes value swaps trivial: `x, y = y, x`
-- The `/` operator performs division yielding a value that may have a fractional value
-- The `//` operator performs floor division - the remainder is discarded
-- The `%` operator computes the remainder of a floor division (modulus)
-
-### Problem Solving
-
-- **Work the problem by hand first** with a small concrete example
-- Translate each hand step into a Python operator or function before you start typing code
-- Compare program output to your hand answer; trust the hand answer until you find the bug
-
-### Python Functions and Modules
-
-- The Python library declares many mathematical functions, such as `sqrt()` and `abs()`
-- You can convert between integers, floats, and strings using: `int()`, `float()`, `str()`
-- Use **`type(x)`** to ask Python what type a value or variable has — invaluable for debugging
-- Python libraries are grouped into **modules**. Use the `import` statement to use functions from a module
-- Use the `input()` function to read keyboard input in a console window
-- Use format specifiers (f-strings recommended) to specify how values should be formatted
-
-### Strings
-
-- **Strings** are sequences of characters
-- The `len()` function yields the number of characters in a string
-- Use the `+` operator to **concatenate** strings, and `*` to **repeat** them
-- To concatenate, the `+` operator requires both arguments to be strings — convert numbers with `str()`
-- String index numbers are counted starting with **0**; **negative indexes** count from the end
-- Use the `[]` operator to extract individual characters and `[start:stop]` slicing to extract substrings
-- Strings are **immutable** — methods like `upper()`, `lower()`, `strip()`, `replace()`, `split()` return a _new_ string
-- Use **escape sequences** (`\n`, `\t`, `\\`, `\"`) or **raw strings** (`r"..."`) for special characters
-
----
-
 ## Key Takeaways
 
 1. **Variables** store data and can change their values during program execution
