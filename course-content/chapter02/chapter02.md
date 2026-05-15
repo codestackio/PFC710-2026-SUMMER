@@ -150,15 +150,15 @@ pizzas = pizzas + 2
 
 Self-updates like `x = x + 2` are so common that Python provides shorter **augmented assignment** operators:
 
-| Operator | Equivalent to | Example              |
-| -------- | ------------- | -------------------- |
-| `+=`     | `x = x + n`   | `pizzas += 2`        |
-| `-=`     | `x = x - n`   | `count -= 1`         |
-| `*=`     | `x = x * n`   | `total *= 1.05`      |
-| `/=`     | `x = x / n`   | `price /= 2`         |
-| `//=`    | `x = x // n`  | `pages //= 10`       |
-| `%=`     | `x = x % n`   | `index %= length`    |
-| `**=`    | `x = x ** n`  | `value **= 2`        |
+| Operator | Equivalent to | Example           |
+| -------- | ------------- | ----------------- |
+| `+=`     | `x = x + n`   | `pizzas += 2`     |
+| `-=`     | `x = x - n`   | `count -= 1`      |
+| `*=`     | `x = x * n`   | `total *= 1.05`   |
+| `/=`     | `x = x / n`   | `price /= 2`      |
+| `//=`    | `x = x // n`  | `pages //= 10`    |
+| `%=`     | `x = x % n`   | `index %= length` |
+| `**=`    | `x = x ** n`  | `value **= 2`     |
 
 ```python
 pizzas = 3
@@ -238,18 +238,18 @@ We'll cover string operations in more detail later in this chapter.
 
 ## Table 1: Number Literals in Python
 
-| Number    | Type    | Comment                                                                  |
-| --------- | ------- | ------------------------------------------------------------------------ |
-| `6`       | `int`   | An integer has no fractional part.                                       |
-| `-6`      | `int`   | Integers can be negative.                                                |
-| `0`       | `int`   | Zero is an integer.                                                      |
-| `0.5`     | `float` | A floating-point number has a fractional part.                           |
-| `1.0`     | `float` | A `float` even when the fractional part is zero — different from `1`.    |
-| `1e3`     | `float` | Exponential (scientific) notation: `1 × 10³` = `1000.0`.                 |
-| `2.5e-3`  | `float` | Negative exponent: `2.5 × 10⁻³` = `0.0025`.                              |
-| `100_000` | `int`   | Underscores may be used as digit separators for readability.             |
-| `3,000`   | error   | Do **not** use commas as thousands separators inside numeric literals.   |
-| `3 1/2`   | error   | Mixed numbers are not allowed; use `3.5` or `7 / 2`.                     |
+| Number    | Type    | Comment                                                                |
+| --------- | ------- | ---------------------------------------------------------------------- |
+| `6`       | `int`   | An integer has no fractional part.                                     |
+| `-6`      | `int`   | Integers can be negative.                                              |
+| `0`       | `int`   | Zero is an integer.                                                    |
+| `0.5`     | `float` | A floating-point number has a fractional part.                         |
+| `1.0`     | `float` | A `float` even when the fractional part is zero — different from `1`.  |
+| `1e3`     | `float` | Exponential (scientific) notation: `1 × 10³` = `1000.0`.               |
+| `2.5e-3`  | `float` | Negative exponent: `2.5 × 10⁻³` = `0.0025`.                            |
+| `100_000` | `int`   | Underscores may be used as digit separators for readability.           |
+| `3,000`   | error   | Do **not** use commas as thousands separators inside numeric literals. |
+| `3 1/2`   | error   | Mixed numbers are not allowed; use `3.5` or `7 / 2`.                   |
 
 ### Naming Variables
 
@@ -267,11 +267,11 @@ Variable names should describe the purpose of the variable. For example, `pizza_
 
 There are two common conventions for writing multi-word variable names:
 
-| Style          | Example         | Where it's the convention                                  |
-| -------------- | --------------- | ---------------------------------------------------------- |
-| **snake_case** | `pizza_price`   | **Python (PEP 8)**, Ruby, Rust                             |
-| **camelCase**  | `pizzaPrice`    | Java, JavaScript, TypeScript, C#, Swift                    |
-| **PascalCase** | `PizzaPrice`    | Reserved in Python for **class names** only — not variables |
+| Style          | Example       | Where it's the convention                                   |
+| -------------- | ------------- | ----------------------------------------------------------- |
+| **snake_case** | `pizza_price` | **Python (PEP 8)**, Ruby, Rust                              |
+| **camelCase**  | `pizzaPrice`  | Java, JavaScript, TypeScript, C#, Swift                     |
+| **PascalCase** | `PizzaPrice`  | Reserved in Python for **class names** only — not variables |
 
 In Python, the official style guide ([PEP 8](https://peps.python.org/pep-0008/#function-and-variable-names)) recommends **`snake_case`**: lowercase letters with underscores between words. The Python standard library, the most popular third-party packages (`requests`, `numpy`, `pandas`, …), and most professional Python codebases all follow this convention.
 
@@ -291,19 +291,19 @@ totalCost = numPizzas * pizzaPrice
 
 ## Table 2: Variable Names in Python
 
-| Variable Name   | Comment                                                                      |
-| --------------- | ---------------------------------------------------------------------------- |
-| `pizza_price`     | ✅ Good — descriptive, `snake_case` (PEP 8).                               |
-| `slices_per_pizza`| ✅ Good — multiple words separated by underscores.                         |
-| `pp`              | ⚠️ Legal but cryptic — what does `pp` mean?                                |
-| `pizzaPrice`      | ⚠️ Legal but non-Pythonic — `camelCase` is the convention in Java/JS, not Python. |
-| `PizzaPrice`      | ⚠️ Legal but reserved by convention for **class names**, not variables.    |
-| `_price`          | ✅ Legal — a single leading underscore signals "internal use".             |
-| `4pizzas`         | ❌ Error — variable names cannot start with a digit.                       |
-| `pizza price`     | ❌ Error — spaces are not allowed in identifiers.                          |
-| `pizza-price`     | ❌ Error — `-` is the subtraction operator, not a name character.          |
-| `if`            | ❌ Error — `if` is a reserved Python keyword.                                |
-| `Print`         | ⚠️ Legal but confusing — Python is case-sensitive, so `Print` ≠ `print`.    |
+| Variable Name      | Comment                                                                           |
+| ------------------ | --------------------------------------------------------------------------------- |
+| `pizza_price`      | ✅ Good — descriptive, `snake_case` (PEP 8).                                      |
+| `slices_per_pizza` | ✅ Good — multiple words separated by underscores.                                |
+| `pp`               | ⚠️ Legal but cryptic — what does `pp` mean?                                       |
+| `pizzaPrice`       | ⚠️ Legal but non-Pythonic — `camelCase` is the convention in Java/JS, not Python. |
+| `PizzaPrice`       | ⚠️ Legal but reserved by convention for **class names**, not variables.           |
+| `_price`           | ✅ Legal — a single leading underscore signals "internal use".                    |
+| `4pizzas`          | ❌ Error — variable names cannot start with a digit.                              |
+| `pizza price`      | ❌ Error — spaces are not allowed in identifiers.                                 |
+| `pizza-price`      | ❌ Error — `-` is the subtraction operator, not a name character.                 |
+| `if`               | ❌ Error — `if` is a reserved Python keyword.                                     |
+| `Print`            | ⚠️ Legal but confusing — Python is case-sensitive, so `Print` ≠ `print`.          |
 
 ### Programming Tip: Use Descriptive Variable Names
 
@@ -585,19 +585,19 @@ print(abs(-173))  # Prints 173
 
 These functions are part of Python itself — no `import` needed.
 
-| Function       | Description                                                  | Example                          |
-| -------------- | ------------------------------------------------------------ | -------------------------------- |
-| `abs(x)`       | Absolute value of `x`                                        | `abs(-5)` → `5`                  |
-| `round(x)`     | Round to the nearest integer (banker's rounding)             | `round(2.5)` → `2`               |
-| `round(x, n)`  | Round to `n` decimal places                                  | `round(3.14159, 2)` → `3.14`     |
-| `min(a, b, …)` | Smallest of the arguments                                    | `min(4, 2, 9)` → `2`             |
-| `max(a, b, …)` | Largest of the arguments                                     | `max(4, 2, 9)` → `9`             |
-| `pow(x, n)`    | `x` raised to the power `n` (same as `x ** n`)               | `pow(2, 10)` → `1024`            |
-| `int(x)`       | Convert to an integer (truncates toward zero)                | `int(3.9)` → `3`                 |
-| `float(x)`     | Convert to a floating-point number                           | `float("1.5")` → `1.5`           |
-| `str(x)`       | Convert to a string                                          | `str(42)` → `"42"`               |
-| `len(s)`       | Length of a string (or other sequence)                       | `len("hello")` → `5`             |
-| `type(x)`      | The class (type) of `x` — handy for debugging                | `type(3.14)` → `<class 'float'>` |
+| Function       | Description                                      | Example                          |
+| -------------- | ------------------------------------------------ | -------------------------------- |
+| `abs(x)`       | Absolute value of `x`                            | `abs(-5)` → `5`                  |
+| `round(x)`     | Round to the nearest integer (banker's rounding) | `round(2.5)` → `2`               |
+| `round(x, n)`  | Round to `n` decimal places                      | `round(3.14159, 2)` → `3.14`     |
+| `min(a, b, …)` | Smallest of the arguments                        | `min(4, 2, 9)` → `2`             |
+| `max(a, b, …)` | Largest of the arguments                         | `max(4, 2, 9)` → `9`             |
+| `pow(x, n)`    | `x` raised to the power `n` (same as `x ** n`)   | `pow(2, 10)` → `1024`            |
+| `int(x)`       | Convert to an integer (truncates toward zero)    | `int(3.9)` → `3`                 |
+| `float(x)`     | Convert to a floating-point number               | `float("1.5")` → `1.5`           |
+| `str(x)`       | Convert to a string                              | `str(42)` → `"42"`               |
+| `len(s)`       | Length of a string (or other sequence)           | `len("hello")` → `5`             |
+| `type(x)`      | The class (type) of `x` — handy for debugging    | `type(3.14)` → `<class 'float'>` |
 
 ### Python Libraries (Modules)
 
@@ -653,20 +653,20 @@ Examples: `print()`, `len()`, `abs()`, `int()`, `float()`, `str()`, `type()`, `i
 
 Add `import math` (or `from math import …`) at the top of your file before using these.
 
-| Function          | Description                                            | Example                              |
-| ----------------- | ------------------------------------------------------ | ------------------------------------ |
-| `math.sqrt(x)`    | Square root of `x` (`x ≥ 0`)                           | `math.sqrt(16)` → `4.0`              |
-| `math.pow(x, y)`  | `x` raised to the power `y` (returns `float`)          | `math.pow(2, 8)` → `256.0`           |
-| `math.exp(x)`     | `eˣ`                                                   | `math.exp(1)` → `2.718...`           |
-| `math.log(x)`     | Natural logarithm of `x`                               | `math.log(math.e)` → `1.0`           |
-| `math.log10(x)`   | Base-10 logarithm of `x`                               | `math.log10(1000)` → `3.0`           |
-| `math.ceil(x)`    | Smallest integer ≥ `x`                                 | `math.ceil(2.1)` → `3`               |
-| `math.floor(x)`   | Largest integer ≤ `x`                                  | `math.floor(2.9)` → `2`              |
-| `math.sin(x)`     | Sine of `x` (in radians)                               | `math.sin(0)` → `0.0`                |
-| `math.cos(x)`     | Cosine of `x` (in radians)                             | `math.cos(0)` → `1.0`                |
-| `math.tan(x)`     | Tangent of `x` (in radians)                            | `math.tan(0)` → `0.0`                |
-| `math.pi`         | Constant π ≈ `3.14159…`                                | `math.pi`                            |
-| `math.e`          | Constant *e* ≈ `2.71828…`                              | `math.e`                             |
+| Function         | Description                                   | Example                    |
+| ---------------- | --------------------------------------------- | -------------------------- |
+| `math.sqrt(x)`   | Square root of `x` (`x ≥ 0`)                  | `math.sqrt(16)` → `4.0`    |
+| `math.pow(x, y)` | `x` raised to the power `y` (returns `float`) | `math.pow(2, 8)` → `256.0` |
+| `math.exp(x)`    | `eˣ`                                          | `math.exp(1)` → `2.718...` |
+| `math.log(x)`    | Natural logarithm of `x`                      | `math.log(math.e)` → `1.0` |
+| `math.log10(x)`  | Base-10 logarithm of `x`                      | `math.log10(1000)` → `3.0` |
+| `math.ceil(x)`   | Smallest integer ≥ `x`                        | `math.ceil(2.1)` → `3`     |
+| `math.floor(x)`  | Largest integer ≤ `x`                         | `math.floor(2.9)` → `2`    |
+| `math.sin(x)`    | Sine of `x` (in radians)                      | `math.sin(0)` → `0.0`      |
+| `math.cos(x)`    | Cosine of `x` (in radians)                    | `math.cos(0)` → `1.0`      |
+| `math.tan(x)`    | Tangent of `x` (in radians)                   | `math.tan(0)` → `0.0`      |
+| `math.pi`        | Constant π ≈ `3.14159…`                       | `math.pi`                  |
+| `math.e`         | Constant _e_ ≈ `2.71828…`                     | `math.e`                   |
 
 ### Floating-Point to Integer Conversion
 
@@ -683,16 +683,16 @@ dollars = int(balance)  # dollars: integer
 
 When translating math notation into Python, remember that everything must be on a single line, multiplication needs an explicit `*`, and grouping is done with `( )`.
 
-| Mathematical expression | Python expression          | Notes                                            |
-| ----------------------- | -------------------------- | ------------------------------------------------ |
-| *a* + *b* / 2           | `a + b / 2`                | `/` has higher precedence than `+`               |
-| (*a* + *b*) / 2         | `(a + b) / 2`              | Use parentheses to override precedence           |
-| *a*² + *b*²             | `a ** 2 + b ** 2`          | `**` is exponentiation                           |
-| 3*x*                    | `3 * x`                    | The `*` is required — `3x` is a syntax error     |
-| √(*a*² + *b*²)          | `math.sqrt(a ** 2 + b ** 2)` | Requires `import math`                         |
-| (1 + *r* / 100)ⁿ        | `(1 + r / 100) ** n`       | Compound-interest growth factor                  |
-| ⌊*x* / *y*⌋             | `x // y`                   | Floor division                                   |
-| *x* mod *y*             | `x % y`                    | Remainder (modulus)                              |
+| Mathematical expression | Python expression            | Notes                                        |
+| ----------------------- | ---------------------------- | -------------------------------------------- |
+| _a_ + _b_ / 2           | `a + b / 2`                  | `/` has higher precedence than `+`           |
+| (_a_ + _b_) / 2         | `(a + b) / 2`                | Use parentheses to override precedence       |
+| *a*² + *b*²             | `a ** 2 + b ** 2`            | `**` is exponentiation                       |
+| 3*x*                    | `3 * x`                      | The `*` is required — `3x` is a syntax error |
+| √(*a*² + *b*²)          | `math.sqrt(a ** 2 + b ** 2)` | Requires `import math`                       |
+| (1 + _r_ / 100)ⁿ        | `(1 + r / 100) ** n`         | Compound-interest growth factor              |
+| ⌊_x_ / _y_⌋             | `x // y`                     | Floor division                               |
+| _x_ mod _y_             | `x % y`                      | Remainder (modulus)                          |
 
 ### Unbalanced Parentheses
 
@@ -756,10 +756,10 @@ Before you write any code, **work the problem by hand** with a small, concrete e
 
 **Step 3 — Translate each step to a Python operation.**
 
-| Hand calculation                         | Python operation   |
-| ---------------------------------------- | ------------------ |
-| "How many full dollars fit in the pile?" | `pennies // 100`   |
-| "How many cents are left after that?"      | `pennies % 100`    |
+| Hand calculation                         | Python operation |
+| ---------------------------------------- | ---------------- |
+| "How many full dollars fit in the pile?" | `pennies // 100` |
+| "How many cents are left after that?"    | `pennies % 100`  |
 
 **Step 4 — Write the program from those steps.**
 
@@ -786,7 +786,7 @@ print(f"That is {dollars} dollars and {cents} cents")
 5. **Code one step at a time** and print intermediate values.
 6. **Compare the output to your hand answer.**
 
-> **Programming tip.** When the program and your hand answer disagree, the bug is usually in step 3 or 4 (you skipped a step or chose the wrong operator), *not* in step 5.
+> **Programming tip.** When the program and your hand answer disagree, the bug is usually in step 3 or 4 (you skipped a step or chose the wrong operator), _not_ in step 5.
 
 ---
 
@@ -962,24 +962,24 @@ greeting[::2]    # "Hlo ol!"   — every second character
 greeting[::-1]   # "!dlroW ,olleH" — the string reversed
 ```
 
-> **Important:** strings in Python are **immutable** — slicing always returns a *new* string; the original is never changed. `greeting[0] = "h"` is an error.
+> **Important:** strings in Python are **immutable** — slicing always returns a _new_ string; the original is never changed. `greeting[0] = "h"` is an error.
 
 ## String Operations
 
 The table below summarizes the operators that work on strings.
 
-| Expression                | Result                | Description                                    |
-| ------------------------- | --------------------- | ---------------------------------------------- |
-| `"Harry" + "Morgan"`      | `"HarryMorgan"`       | Concatenation joins two strings                |
-| `"ab" * 3`                | `"ababab"`            | Repetition repeats a string `n` times          |
-| `len("Harry")`            | `5`                   | Number of characters                           |
-| `"Harry"[0]`              | `"H"`                 | Character at index 0                           |
-| `"Harry"[-1]`             | `"y"`                 | Last character (negative indexing)             |
-| `"Harry"[1:4]`            | `"arr"`               | Slice from index 1 up to (not including) 4     |
-| `"a" in "Harry"`          | `True`                | Membership test — is `"a"` a substring?        |
-| `"z" in "Harry"`          | `False`               | Same, with no match                            |
-| `"Harry" == "harry"`      | `False`               | Equality (case-sensitive)                      |
-| `str(42) + " slices"`     | `"42 slices"`         | Use `str()` to convert numbers before joining  |
+| Expression            | Result          | Description                                   |
+| --------------------- | --------------- | --------------------------------------------- |
+| `"Harry" + "Morgan"`  | `"HarryMorgan"` | Concatenation joins two strings               |
+| `"ab" * 3`            | `"ababab"`      | Repetition repeats a string `n` times         |
+| `len("Harry")`        | `5`             | Number of characters                          |
+| `"Harry"[0]`          | `"H"`           | Character at index 0                          |
+| `"Harry"[-1]`         | `"y"`           | Last character (negative indexing)            |
+| `"Harry"[1:4]`        | `"arr"`         | Slice from index 1 up to (not including) 4    |
+| `"a" in "Harry"`      | `True`          | Membership test — is `"a"` a substring?       |
+| `"z" in "Harry"`      | `False`         | Same, with no match                           |
+| `"Harry" == "harry"`  | `False`         | Equality (case-sensitive)                     |
+| `str(42) + " slices"` | `"42 slices"`   | Use `str()` to convert numbers before joining |
 
 ### Methods
 
@@ -1005,18 +1005,18 @@ uppercase_name = name.upper()  # Sets uppercase_name to "JOHN SMITH"
 
 Methods are called with the dot syntax: `some_string.method_name(arguments)`. Because strings are immutable, every method returns a **new** string instead of modifying the original.
 
-| Method                          | Description                                            | Example                                  | Result            |
-| ------------------------------- | ------------------------------------------------------ | ---------------------------------------- | ----------------- |
-| `s.upper()`                     | All-uppercase copy                                     | `"hi".upper()`                           | `"HI"`            |
-| `s.lower()`                     | All-lowercase copy                                     | `"HI".lower()`                           | `"hi"`            |
-| `s.strip()`                     | Remove leading/trailing whitespace                     | `"  hi ".strip()`                        | `"hi"`            |
-| `s.replace(old, new)`           | Replace every occurrence of `old` with `new`           | `"hi hi".replace("hi", "yo")`            | `"yo yo"`         |
-| `s.find(sub)`                   | Index of first occurrence of `sub` (`-1` if missing)   | `"banana".find("na")`                    | `2`               |
-| `s.count(sub)`                  | Number of non-overlapping occurrences                  | `"banana".count("na")`                   | `2`               |
-| `s.startswith(prefix)`          | `True` if `s` begins with `prefix`                     | `"hello".startswith("he")`               | `True`            |
-| `s.endswith(suffix)`            | `True` if `s` ends with `suffix`                       | `"hello".endswith("lo")`                 | `True`            |
-| `s.isdigit()`                   | `True` if every character is a digit                   | `"123".isdigit()`                        | `True`            |
-| `s.isalpha()`                   | `True` if every character is a letter                  | `"abc".isalpha()`                        | `True`            |
+| Method                 | Description                                          | Example                       | Result    |
+| ---------------------- | ---------------------------------------------------- | ----------------------------- | --------- |
+| `s.upper()`            | All-uppercase copy                                   | `"hi".upper()`                | `"HI"`    |
+| `s.lower()`            | All-lowercase copy                                   | `"HI".lower()`                | `"hi"`    |
+| `s.strip()`            | Remove leading/trailing whitespace                   | `"  hi ".strip()`             | `"hi"`    |
+| `s.replace(old, new)`  | Replace every occurrence of `old` with `new`         | `"hi hi".replace("hi", "yo")` | `"yo yo"` |
+| `s.find(sub)`          | Index of first occurrence of `sub` (`-1` if missing) | `"banana".find("na")`         | `2`       |
+| `s.count(sub)`         | Number of non-overlapping occurrences                | `"banana".count("na")`        | `2`       |
+| `s.startswith(prefix)` | `True` if `s` begins with `prefix`                   | `"hello".startswith("he")`    | `True`    |
+| `s.endswith(suffix)`   | `True` if `s` ends with `suffix`                     | `"hello".endswith("lo")`      | `True`    |
+| `s.isdigit()`          | `True` if every character is a digit                 | `"123".isdigit()`             | `True`    |
+| `s.isalpha()`          | `True` if every character is a letter                | `"abc".isalpha()`             | `True`    |
 
 You can also **chain** methods because each one returns a string:
 
@@ -1030,14 +1030,14 @@ print(clean)   # "hello world!"
 
 Some characters are inconvenient (or impossible) to type directly inside a string literal — quotes, backslashes, tabs, newlines. Python lets you write them with **escape sequences** that begin with `\`.
 
-| Escape | Meaning                          |
-| ------ | -------------------------------- |
-| `\"`   | Double quote                     |
-| `\'`   | Single quote                     |
-| `\\`   | A single literal backslash       |
-| `\n`   | Newline (line break)             |
-| `\t`   | Tab                              |
-| `\r`   | Carriage return                  |
+| Escape | Meaning                    |
+| ------ | -------------------------- |
+| `\"`   | Double quote               |
+| `\'`   | Single quote               |
+| `\\`   | A single literal backslash |
+| `\n`   | Newline (line break)       |
+| `\t`   | Tab                        |
+| `\r`   | Carriage return            |
 
 **Printing a double quote** inside a double-quoted string — escape it with `\`:
 
@@ -1225,17 +1225,7 @@ age = int(input("Age: "))
 print(age + 1)
 ```
 
-### 2. Floating-Point Precision Surprises
-
-Floats are stored in binary and cannot represent every decimal exactly:
-
-```python
-print(0.1 + 0.2)   # 0.30000000000000004 — not 0.3!
-```
-
-For **money** or anything where exact decimals matter, work in cents (integers) or use the `decimal` module. For display, format with `f"{x:.2f}"`.
-
-### 3. Mixing Strings and Numbers with `+`
+### 2. Mixing Strings and Numbers with `+`
 
 ```python
 "Total: " + 5         # TypeError
@@ -1245,7 +1235,7 @@ f"Total: {5}"         # ✅ even cleaner
 
 > **Debugging tip.** When a `TypeError` like this surprises you, drop a quick `print(type(x))` before the failing line to see what type Python actually has. For example, `age` after `age = input("Age: ")` is `<class 'str'>`, not `<class 'int'>` — `type()` makes that obvious in one line.
 
-### 4. Using a Variable Before It Is Defined
+### 3. Using a Variable Before It Is Defined
 
 ```python
 print(total)          # NameError: name 'total' is not defined
@@ -1254,7 +1244,7 @@ total = 100
 
 A variable must be assigned **before** any line that reads it.
 
-### 5. Index Out of Range
+### 4. Index Out of Range
 
 ```python
 name = "Harry"
@@ -1263,13 +1253,13 @@ print(name[5])        # IndexError — valid indexes are 0..4 (or -5..-1)
 
 Use `len(name)` to know the bounds, or use slicing (which never raises an `IndexError`).
 
-### 6. Division Quirks
+### 5. Division Quirks
 
 - `/` always returns a **float**: `4 / 2` is `2.0`, not `2`.
 - `//` truncates toward **negative infinity**: `-7 // 2` is `-4`, not `-3`.
 - Dividing by zero raises `ZeroDivisionError`. Always validate user input before dividing.
 
-### 7. Backslashes in Windows Paths
+### 6. Backslashes in Windows Paths
 
 ```python
 path = "C:\new\test"   # \n becomes a newline, \t becomes a tab
@@ -1277,7 +1267,7 @@ path = "C:\new\test"   # \n becomes a newline, \t becomes a tab
 
 Use `\\`, forward slashes, or a **raw string**: `r"C:\new\test"`.
 
-### 8. Accidental Reassignment of Built-ins
+### 7. Accidental Reassignment of Built-ins
 
 ```python
 list = [1, 2, 3]       # 'list' now hides the built-in list() type!
@@ -1285,7 +1275,7 @@ list = [1, 2, 3]       # 'list' now hides the built-in list() type!
 
 Avoid using names like `list`, `str`, `int`, `sum`, `id`, `input` for your own variables.
 
-### 9. Indentation and Whitespace
+### 8. Indentation and Whitespace
 
 Python uses indentation to group code. Mixing tabs and spaces, or indenting inconsistently, causes `IndentationError` or — worse — silent logic bugs. Pick one style (PyCharm uses 4 spaces by default) and stick with it.
 
@@ -1333,7 +1323,7 @@ Python uses indentation to group code. Mixing tabs and spaces, or indenting inco
 - To concatenate, the `+` operator requires both arguments to be strings — convert numbers with `str()`
 - String index numbers are counted starting with **0**; **negative indexes** count from the end
 - Use the `[]` operator to extract individual characters and `[start:stop]` slicing to extract substrings
-- Strings are **immutable** — methods like `upper()`, `lower()`, `strip()`, `replace()`, `split()` return a *new* string
+- Strings are **immutable** — methods like `upper()`, `lower()`, `strip()`, `replace()`, `split()` return a _new_ string
 - Use **escape sequences** (`\n`, `\t`, `\\`, `\"`) or **raw strings** (`r"..."`) for special characters
 
 ---
