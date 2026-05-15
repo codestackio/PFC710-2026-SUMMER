@@ -547,35 +547,6 @@ remainder = 7 % 4  # The value of remainder will be 3
 
 This is sometimes called **modulo division**.
 
-### Example: Converting Pennies to Dollars and Cents
-
-**Instructions:**
-
-1. Open a new file in the PyCharm IDE
-2. Type in the following code
-3. Save the file
-4. Run the file
-
-```python
-# Convert pennies to dollars and cents
-pennies = 1729
-dollars = pennies // 100  # Calculates the number of dollars
-cents = pennies % 100     # Calculates the number of pennies
-print("I have", dollars, "and", cents, "cents")
-```
-
-**What is the result?**
-
-### Integer Division and Remainder Examples
-
-Handy to use for making change:
-
-```python
-pennies = 1729
-dollars = pennies // 100  # 17 (using floor division)
-cents = pennies % 100      # 29 (remainder)
-```
-
 ![Picture 1](media/image10.png "Picture 1")
 
 ### Calling Functions
