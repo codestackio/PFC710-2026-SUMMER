@@ -20,8 +20,4 @@ Course materials for PFC710 - Summer 2026
   - Reading input with `input()` and formatting output with f-strings
   - [Chapter 2 Exercises](chapter02/exercises.md)
 
-## Teach Later
-- [Deferred Topics](teach-later.md)
-  - **From Chapter 2 — External Libraries**: `pip`, virtual environments, `requirements.txt`, and the `requests` library (with three exercises)
-
 ---
