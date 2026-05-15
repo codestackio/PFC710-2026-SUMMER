@@ -769,7 +769,7 @@ Before you write any code, **work the problem by hand** with a small, concrete e
 #  and leftover cents, using floor division and the modulus operator.
 #
 
-pennies = int(input("Total pennies: "))
+pennies = 1729
 dollars = pennies // 100
 cents = pennies % 100
 print(f"That is {dollars} dollars and {cents} cents")
