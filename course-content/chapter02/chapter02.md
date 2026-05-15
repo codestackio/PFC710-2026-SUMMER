@@ -1394,14 +1394,6 @@ Python uses indentation to group code. Mixing tabs and spaces, or indenting inco
 
 ---
 
-## Exercises
-
-Practice what you've learned by completing the exercises:
-
-**[→ Chapter 2 Exercises](exercises.md)**
-
----
-
 _End of Chapter Two_
 
 [← Back to Course Index](../table-of-contents.md)
