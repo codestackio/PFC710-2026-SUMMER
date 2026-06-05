@@ -280,7 +280,7 @@ round(6.8275, ndigits=2)     # mix positional and keyword
 greet(name="Bob", "Alice")   # Error — positional argument after keyword
 ```
 
-### How it works (pass by value)
+### What happens when you call a function
 
 Python passes the **value** of the argument into the parameter. For numbers and other simple types, the function gets a copy of the value. So when the function runs, the parameter variable holds that value and can be used in expressions—but changing the parameter variable does not change the variable in the caller.
 
