@@ -44,4 +44,16 @@ Course materials for PFC710 - Summer 2026
   - Parameter passing, default parameter values, keyword arguments, return values (including returning multiple values), and functions without return values
   - Variable scope: local, global, and preferring parameters over globals
 
+## Chapter 6
+- [Chapter Six: Lists](chapter06/chapter06.md)
+  - List basics: creation, indexing, mutability, length, iteration, references, aliases, copying, and negative indices
+  - List operations: `append`, `insert`, `pop`, `remove`, concatenation, replication, equality, `sum`/`max`/`min`, `sort`, and slicing
+  - Common list algorithms: filling a list, combining elements, linear search, collecting and counting matches, removing matches, swapping, and reading input
+  - Lists with functions: passing lists as arguments, mutating lists in place, parameter passing, and returning lists
+  - Tuples: immutability, use cases, returning multiple values, and operations that work or do not work compared to lists
+
+## Special Topics
+- [External Libraries](special-topics/external-libraries.md)
+  - Third-party packages, PyPI, pip, `requirements.txt`, and the `requests` library
+
 ---
