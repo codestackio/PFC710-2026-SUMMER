@@ -55,5 +55,9 @@ Course materials for PFC710 - Summer 2026
 ## Special Topics
 - [External Libraries](special-topics/external-libraries.md)
   - Third-party packages, PyPI, pip, `requirements.txt`, and the `requests` library
+- [Random Choices](special-topics/random.md)
+  - The `random` module: `choice`, `randint`, and `random()` for probability-based branching
+- [Timestamps](special-topics/timestamp.md)
+  - The `datetime` module, `strftime` format codes, and using timestamps in file names and logs
 
 ---
