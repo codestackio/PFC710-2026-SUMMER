@@ -55,9 +55,12 @@ Course materials for PFC710 - Summer 2026
 ## Special Topics
 - [External Libraries](special-topics/external-libraries.md)
   - Third-party packages, PyPI, pip, `requirements.txt`, and the `requests` library
+- [AWS Lambda](special-topics/lambda.md)
+  - Serverless Python functions, handlers, environment variables, EventBridge scheduling, S3, packaging, and CloudWatch logging
 - [Random Choices](special-topics/random.md)
   - The `random` module: `choice`, `randint`, and `random()` for probability-based branching
 - [Timestamps](special-topics/timestamp.md)
   - The `datetime` module, `strftime` format codes, and using timestamps in file names and logs
+
 
 ---
