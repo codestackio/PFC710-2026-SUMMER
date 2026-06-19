@@ -52,6 +52,15 @@ Course materials for PFC710 - Summer 2026
   - Lists with functions: passing lists as arguments, mutating lists in place, parameter passing, and returning lists
   - Tuples: immutability, use cases, returning multiple values, and operations that work or do not work compared to lists
 
+## Chapter 7
+- [Chapter Seven: Files and Exceptions](chapter07/chapter07.md)
+  - Opening, reading, writing, and closing text files; modes `"r"`, `"w"`, and `"a"`
+  - The `with` statement for safe file handling
+  - Processing text by line, word, and character; `rstrip()`, `split()`, and `rsplit()`
+  - Reading structured records from files
+  - Command-line arguments with `sys.argv`
+  - Raising and handling exceptions with `try`, `except`, and `finally`
+
 ## Special Topics
 - [External Libraries](special-topics/external-libraries.md)
   - Third-party packages, PyPI, pip, `requirements.txt`, and the `requests` library
