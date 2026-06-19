@@ -407,27 +407,6 @@ for line in infile:
     # Process data record
 ```
 
-**Record format 3 — one line, no delimiter:**  
-e.g. `China 1330044605`, `United States 303824646`. You cannot split on spaces because country names can have multiple words. Use **`rsplit(" ", 1)`** to split only on the last space:
-
-```python
-input_string = "United States 303824646"
-result = input_string.rsplit(" ", 1)
-print(result)   # ['United States', '303824646']
-```
-
-Alternatively, find the first digit and slice the line:
-
-```python
-i = 0
-while i < len(line) and not line[i].isdigit():
-    i = i + 1
-country_name = line[:i].rstrip()
-population = int(line[i:])
-```
-
-![](media/image11.jpeg "Slicing a line into name and number")
-
 ### File Operations Summary
 
 | Operation | Purpose |
@@ -668,7 +647,7 @@ finally:
     outfile.close()
 ```
 
-A **`try`** block may have one or more **`except`** clauses and an optional **`finally`** clause. The `finally` block always runs when the `try` block is exited.
+A **`try`** block may include an optional **`finally`** clause. The `finally` block always runs when the `try` block is exited, whether or not an exception occurred. For closing files, **`with`** (see below) is usually simpler than `finally`.
 
 ![](media/image15.jpeg "try/except/finally syntax")
 
@@ -677,19 +656,6 @@ A **`try`** block may have one or more **`except`** clauses and an optional **`f
 **Raise early.** If a function detects a problem it cannot fix, raise an exception rather than applying a bad fix.
 
 **Catch late.** Only catch an exception where you can actually handle it. Otherwise, let it propagate to a caller that can.
-
-**Avoid mixing `except` and `finally` in one `try`.** The `finally` block runs when the `try` is exited: by finishing normally, by an `except` handling an exception, or by an unhandled exception. If the file object might be `None` (e.g. `open` failed), calling `close()` in `finally` could raise another exception. Prefer nested `try` blocks:
-
-```python
-try:
-    outfile = open(filename, "w")
-    try:
-        # Write output to outfile
-    finally:
-        outfile.close()
-except OSError:
-    # Handle exception
-```
 
 ### The with Statement and Exceptions
 
