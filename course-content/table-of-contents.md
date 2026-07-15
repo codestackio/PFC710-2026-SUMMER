@@ -3,7 +3,7 @@
 Course materials for PFC710 - Summer 2026
 
 ## Chapter 1
-- [Chapter One: Introduction](chapter01/chapter01.md)
+- [Chapter One: Introduction](chapter01%20-%20Introduction/chapter01.md)
   - Hardware, CPU, memory, RAM vs persistent storage (SSD, USB, cloud-synced files)
   - Algorithms, pseudocode, and planning before code
   - Python, the interpreter, bytecode, and the virtual machine (no separate compile step)
@@ -11,7 +11,7 @@ Course materials for PFC710 - Summer 2026
   - Errors: syntax, run-time exceptions (tracebacks), and logic; optional Zen of Python and official tutorial
 
 ## Chapter 2
-- [Chapter Two: Programming with Numbers and Strings](chapter02/chapter02.md)
+- [Chapter Two: Programming with Numbers and Strings](chapter02%20-%20Programming%20with%20Numbers%20and%20Strings/chapter02.md)
   - Variables, assignment, constants, comments, and naming conventions
   - Arithmetic operators, operator precedence, floor division (`//`) and modulus (`%`)
   - The `math` module, built-in numeric functions, and type conversions (`int`, `float`, `str`)
@@ -20,7 +20,7 @@ Course materials for PFC710 - Summer 2026
   - Reading input with `input()` and formatting output with f-strings
 
 ## Chapter 3
-- [Chapter Three: Decisions and Relational Operators](chapter03/chapter03.md)
+- [Chapter Three: Decisions and Relational Operators](chapter03%20-%20Decisions%20and%20Relational%20Operators/chapter03.md)
   - The `if` statement, compound blocks, `pass`, and flowcharts
   - Relational operators (`==`, `!=`, `<`, `>`, `<=`, `>=`); comparing numbers and strings (lexicographic order)
   - Nested `if` statements and multiway branching with `elif`
@@ -29,7 +29,7 @@ Course materials for PFC710 - Summer 2026
   - Input validation and guarding against invalid user data
 
 ## Chapter 4
-- [Chapter Four: Loops](chapter04/chapter04.md)
+- [Chapter Four: Loops](chapter04%20-%20Loops/chapter04.md)
   - The `while` loop: count-controlled and event-controlled loops, `+=`, `break`, `continue`, and `while True`
   - Hand-tracing loops to predict behavior and find logic errors (for example sum of digits with `%` and `//`)
   - Sentinel values, priming and modification reads, and boolean flag variables
@@ -38,14 +38,14 @@ Course materials for PFC710 - Summer 2026
   - Nested loops (for example a multiplication table) and string processing with loops
 
 ## Chapter 5
-- [Chapter Five: Functions](chapter05/chapter05.md)
+- [Chapter Five: Functions](chapter05%20-%20Functions/chapter05.md)
   - Functions as black boxes: arguments, return values, and specifications
   - Defining and testing functions, `main()`, and definition order
   - Parameter passing, default parameter values, keyword arguments, return values (including returning multiple values), and functions without return values
   - Variable scope: local, global, and preferring parameters over globals
 
 ## Chapter 6
-- [Chapter Six: Lists](chapter06/chapter06.md)
+- [Chapter Six: Lists](chapter06%20-%20Lists/chapter06.md)
   - List basics: creation, indexing, mutability, length, iteration, references, aliases, copying, and negative indices
   - List operations: `append`, `insert`, `pop`, `remove`, concatenation, replication, equality, `sum`/`max`/`min`, `sort`, and slicing
   - Common list algorithms: filling a list, combining elements, linear search, collecting and counting matches, removing matches, swapping, and reading input
@@ -53,13 +53,22 @@ Course materials for PFC710 - Summer 2026
   - Tuples: immutability, use cases, returning multiple values, and operations that work or do not work compared to lists
 
 ## Chapter 7
-- [Chapter Seven: Files and Exceptions](chapter07/chapter07.md)
+- [Chapter Seven: Files and Exceptions](chapter07%20-%20Files%20and%20Exceptions/chapter07.md)
   - Opening, reading, writing, and closing text files; modes `"r"`, `"w"`, and `"a"`
   - The `with` statement for safe file handling
   - Processing text by line, word, and character; `rstrip()`, `split()`, and `rsplit()`
   - Reading structured records from files
   - Command-line arguments with `sys.argv`
   - Raising and handling exceptions with `try`, `except`, and `finally`
+
+## Chapter 8
+- [Chapter Eight: Sets and Dictionaries](chapter08%20-%20Sets%20and%20Dictionaries/chapter08.md)
+  - Sets: creation, membership, `add`/`discard`/`remove`/`clear`, subsets, union, intersection, and difference
+  - Counting unique words with a set
+  - Dictionaries: creation, `len`, membership, `get`, add/update, `pop`/`del`/`clear`, and traversal (`keys`, `values`, `items`)
+  - Dictionaries as data records and reading structured file records
+  - Complex structures (for example a dictionary of sets for a book index)
+  - Modules: driver vs supplemental files and `if __name__ == "__main__"`
 
 ## Special Topics
 - [External Libraries](special-topics/external-libraries.md)
