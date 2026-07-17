@@ -287,6 +287,7 @@ with open("nurseryrhyme.txt", "r") as inputFile:
 ```
 
 nurseryrhyme.txt
+
 ```text
 Mary had a little lamb,
 whose fleece was white as snow.
@@ -311,7 +312,7 @@ the eager children cry.
 
 "Why, Mary loves the lamb, you know."
  the teacher did reply.
- ```
+```
 
 ### Step 4: Clean the Words
 
@@ -495,16 +496,6 @@ if "Fred" in contacts:
 ```python
 fredsNumber = contacts.pop("Fred")
 ```
-
-### Removing Elements: `del`
-
-The **`del`** statement also removes a key–value pair. Unlike **`pop()`**, it does **not** return the value. If the key is missing, it raises **`KeyError`**:
-
-```python
-del contacts["Mary"]
-```
-
-Use **`pop()`** when you need the removed value; use **`del`** when you only need to delete the entry.
 
 ### Removing All Elements: `clear()`
 
@@ -829,7 +820,7 @@ Place both `math_utils.py` and `main.py` in the same folder.
 - **`len()`** returns the number of key–value pairs.
 - **`in`** tests whether a key exists.
 - **`get(key, default)`** returns a default if the key is missing.
-- **`pop(key)`** removes an entry and returns its value; **`del d[key]`** removes without returning.
+- **`pop(key)`** removes an entry and returns its value.
 - **`clear()`** removes all entries.
 
 ### Complex Structures
