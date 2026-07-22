@@ -70,6 +70,14 @@ Course materials for PFC710 - Summer 2026
   - Complex structures (for example a dictionary of sets for a book index)
   - Modules: driver vs supplemental files and `if __name__ == "__main__"`
 
+## Chapter 9
+- [Chapter Nine: S3 and DynamoDB](chapter09%20-%20S3%20and%20DynamoDB/chapter09.md)
+  - AWS Academy credentials in the Windows `.aws` folder (`credentials` and `config`)
+  - Installing and using **boto3**
+  - S3: `put_object`, `get_object`, JSON bodies, and unique keys with `uuid`
+  - DynamoDB: tables, items, **partition key** only, `put_item`, and `get_item`
+  - Reading bucket and table names from environment variables
+
 ## Special Topics
 - [External Libraries](special-topics/external-libraries.md)
   - Third-party packages, PyPI, pip, `requirements.txt`, and the `requests` library
