@@ -1,4 +1,4 @@
-# Chapter 9: Working with AWS from Python
+# Chapter 9: S3 and DynamoDB
 
 ---
 
@@ -340,8 +340,6 @@ except Exception as e:
     print("DynamoDB error:", e)
 ```
 
-In Lambda, use CloudWatch logging the same way you did in Project 1.
-
 ---
 
 ## 9.5 Chapter Summary
@@ -365,10 +363,6 @@ In Lambda, use CloudWatch logging the same way you did in Project 1.
 - You need a **partition key** (for this course, that is enough).
 - **`put_item`** writes (or replaces) an item; **`get_item`** reads by partition key.
 - Prefer environment variables for bucket and table names.
-
-### What comes next
-
-In the next chapter you will connect these pieces into an **event-driven** flow: upload to S3, send a message through a **queue**, and let **Lambda** download the file and save a row in DynamoDB.
 
 ---
 
