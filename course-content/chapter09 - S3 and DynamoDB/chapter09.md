@@ -228,8 +228,6 @@ Steps:
 2. Read **`response["Body"]`** and decode it to a string.
 3. Use **`json.loads`** to turn the string back into a dictionary.
 
-**Remember:** An S3 **event message** (you will see these in the next chapter) often tells you the **bucket and key**, not the file contents. Your code still needs **`get_object`** to download the JSON.
-
 ### Use environment variables for the bucket name
 
 Do not hard-code the bucket name if your assignment says to use configuration:
