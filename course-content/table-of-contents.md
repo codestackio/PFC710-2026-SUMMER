@@ -78,6 +78,15 @@ Course materials for PFC710 - Summer 2026
   - DynamoDB: tables, items, **partition key** only, `put_item`, and `get_item`
   - Reading bucket and table names from environment variables
 
+## Chapter 10
+- [Chapter Ten: Event-Driven Programming](chapter10%20-%20Event-Driven%20Programming/chapter10.md)
+  - Call-driven vs event-driven styles
+  - Producers, events, and consumers (with everyday analogies)
+  - S3 object-created notifications invoking Lambda
+  - Reading bucket and key from an S3 event; URL-decoding keys
+  - Metadata vs object contents (`get_object` when you need the file)
+  - A small local producer (`put_object`) and a menu-upload consumer example
+
 ## Special Topics
 - [External Libraries](special-topics/external-libraries.md)
   - Third-party packages, PyPI, pip, `requirements.txt`, and the `requests` library
