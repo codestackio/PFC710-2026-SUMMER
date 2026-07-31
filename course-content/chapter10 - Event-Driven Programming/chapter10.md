@@ -194,7 +194,7 @@ An S3 event answers questions like:
 - About how large is the object?
 - Was this a Put (or another create type)?
 
-It does **not** usually include the **bytes of the file** you uploaded (your menu JSON, a photo, a PDF). Think of the event as a **note pinned to the fridge**: “new file in drawer 3,” not the file itself.
+It does **not** include the **bytes of the file** you uploaded (your menu JSON, a photo, a PDF). Think of the event as a **note pinned to the fridge**: “new file in drawer 3,” not the file itself.
 
 If the consumer needs the contents, it must **fetch** them—for example with **`get_object`** (Chapter 9):
 
