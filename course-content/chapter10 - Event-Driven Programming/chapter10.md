@@ -132,7 +132,7 @@ AWS services often publish events when their state changes. One common pattern:
 Your script --put_object--> S3 --ObjectCreated--> Lambda
 ```
 
-**Example scenario (unrelated to your projects):** a small bakery’s tablet app uploads tonight’s menu as `menus/2026-07-29.json`. When the file lands, Lambda runs to **check** that required fields exist (`title`, `items`) and **print** a summary to the logs. The tablet app never imports or calls the Lambda function; S3 connects them.
+**Example scenario:** a small bakery’s tablet app uploads tonight’s menu as `menus/2026-07-29.json`. When the file lands, Lambda runs to **check** that required fields exist (`title`, `items`) and **print** a summary to the logs. The tablet app never imports or calls the Lambda function; S3 connects them.
 
 Other triggers exist too (schedules, queues, HTTP APIs). This chapter focuses on **“a new object appeared in S3.”**
 
